@@ -75,5 +75,5 @@
 
 div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
     width: 200px;
-    background-color: var(--primaryColor);
+    background-color: var(--primaryColor) !important;
 }
