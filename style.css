@@ -58,7 +58,6 @@
 }
 
 
-
 .main-container p {
     height: 20px;
     border: 1px solid #fff;
@@ -70,4 +69,11 @@
 
 .main-container .createTask i {
     padding-left: 124px;
+}
+
+
+
+div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm {
+    width: 200px;
+    background-color: var(--primaryColor);
 }

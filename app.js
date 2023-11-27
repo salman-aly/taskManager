@@ -7,9 +7,23 @@ let createTask = () => {
     let userTasks = document.querySelector(".createTask");
 
     if (userInput.trim() === "") {
-        alert("Write something");
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Please create a task!",
+        });
     } else {
-        userTasks.innerHTML += `
+
+        Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Task successfully created",
+            showConfirmButton: false,
+            timer: 1000
+        });
+
+        setTimeout(() => {
+            userTasks.innerHTML += `
             <p class="paragraph">
                 ${userInput}
                 <a href="#">
@@ -17,6 +31,8 @@ let createTask = () => {
                 </a>
             </p>
         `;
+        }, 1500)
+
 
         // Hide the default content
         let hide = document.getElementById("hideDefault");
@@ -25,7 +41,7 @@ let createTask = () => {
 
     document.getElementById("userTask").value = "";
 
-    // Single delete the task
+    // Single task delete
     let del = document.getElementById("del");
 
     del.addEventListener('click', () => {
