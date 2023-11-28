@@ -42,8 +42,8 @@ let createTask = () => {
     document.getElementById("userTask").value = "";
 
     // Single task delete
+    
     let del = document.getElementById("del");
-
     del.addEventListener('click', () => {
         let p = document.querySelector(".paragraph");
         p.remove();

@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 :root {
     --primaryColor: #10AC84;
@@ -38,6 +41,10 @@
     margin-bottom: 5px;
 }
 
+input::placeholder {
+    color: #fff;
+}
+
 .main-container button {
     width: 140px;
     padding: 6px;
@@ -46,7 +53,7 @@
     border: none;
     border-radius: 3px;
     font-size: 16px;
-    margin-top: 7px;
+    margin-top: 10px;
 }
 
 .main-container input ::placeholder {
@@ -64,11 +71,11 @@
     border-radius: 3px;
     padding: 10px 7px;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .main-container .createTask i {
-    padding-left: 124px;
+    padding-left: 120px;
 }
 
 
